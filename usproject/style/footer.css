@@ -1,0 +1,139 @@
+.wave-container {
+    position: relative;
+    margin-top: 5%;
+    overflow: hidden; /* Ensure the SVG doesn't overflow its container */
+    height: 40vh; /* Set a height for the container to show the wave */
+}
+
+.wave-container svg {
+    position: absolute;
+    margin-top: 15%;
+    bottom: -130px; /* Align the wave to the bottom */
+    width: 100%; /* Make the SVG responsive */
+    animation: float 5s ease-in-out infinite; /* Apply the floating animation */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Adjust this value for the height of the float */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.footer{
+    width: 100%;
+    background-color: #212179;
+    height: 75vh;
+    display: flex;
+}
+#logo2{
+    background-color: yellow;
+    height: 15%;
+    width: 30%;
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 6%;
+    display: flex;
+}
+.contactus{
+    position: relative;
+    margin-left: 35%;
+    color: white;
+    height: 45%;
+    width: 30%;
+}
+.mailsection{
+    color: white;
+    width: 35%;
+    margin-right: 5%;
+}
+.mailsection p{
+    font-size: 35px;
+}
+.mailsection button {
+    margin-left: 20%; /* Adjust margin as needed */
+    padding: 0.8em 1.5em; /* Add padding for better sizing */
+    border: 2px solid white;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Combine transitions */
+    font-family: inherit;
+    color: white;
+    position: relative; /* Make sure the button is positioned relatively */
+    overflow: hidden; /* Keep the overflow hidden */
+}
+
+.mailsection button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: red;
+    transition: width 0.5s ease; /* Only transition the width */
+    display: block;
+    z-index: -1;
+}
+
+.mailsection button:hover::before {
+    width: 105%; /* Adjust the hover effect */
+}
+
+.mailsection button:hover {
+    color: white;
+    transform: scale(1.05);
+}
+.reachout{
+    position: absolute;
+    margin-top: 22%;
+    color: white;
+    margin-left: 5%;
+}
+.reachout p{
+    font-size: 25px;
+}
+.reachout textarea{
+    resize: none;
+    border: solid 4px black;
+}
+.reachout button{
+    position: absolute;
+    margin-left: 10%;
+    width: 20%;
+    margin-top: 5%;
+    background-color: #212179;
+    border: solid 2px white;
+    color: white;
+    font-size: 25px;
+    overflow: hidden;
+}
+.reachout button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: red;
+    transition: width 0.5s ease; /* Only transition the width */
+    display: block;
+    z-index: -1;
+}
+
+.reachout button:hover::before {
+    width: 105%; /* Adjust the hover effect */
+}
+
+.reachout button:hover {
+    color: white;
+    transform: scale(1.05);
+}

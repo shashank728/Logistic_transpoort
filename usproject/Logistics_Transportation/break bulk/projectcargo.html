@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Cargo Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f7f9fc;
+            color: #212121;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #212179;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('/Logistics_Transportation/break\ bulk/project_cargo.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 70vh; 
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6); 
+            z-index: 1; 
+        }
+
+        .hero h1 {
+            position: relative;
+            z-index: 2; 
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            position: relative;
+            z-index: 2; 
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        .commitment-section {
+            padding: 60px 0;
+        }
+
+        .commitment-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        .commitment-section p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-body {
+            background: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #212179;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">U.S. Handle Worldwide Trade</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Project Cargo Services</h1>
+            <p>Handling Project Cargo is a specialized job that requires expertise and experience.</p>
+        </div>
+    </section>
+
+    <div class="container commitment-section" id="services">
+        <h2>Our Commitment</h2>
+        <p>We have a dedicated team to undertake such services with utmost responsibility and skill.</p>
+        <p>With minute planning, we ensure that consignments, regardless of their size, weight, and dimensions, are transported and delivered from the manufacturing/assembling/procurement point to the project site without any damage or loss, through the shortest route and in the fastest possible time.</p>
+        
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/Logistics_Transportation/break bulk/expert_headling.jpg" class="card-img-top" alt="Expert Handling">
+                    <div class="card-body">
+                        <h5 class="card-title">Expert Handling</h5>
+                        <p class="card-text">Our team is trained in specialized techniques to manage complex cargo safely.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/Logistics_Transportation/break bulk/time_delivery.jpg" class="card-img-top" alt="Timely Delivery">
+                    <div class="card-body">
+                        <h5 class="card-title">Timely Delivery</h5>
+                        <p class="card-text">We guarantee timely delivery of your project cargo, regardless of its nature.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/Logistics_Transportation/break bulk/tailored_solution.jpg" class="card-img-top" alt="Tailored Solutions">
+                    <div class="card-body">
+                        <h5 class="card-title">Tailored Solutions</h5>
+                        <p class="card-text">Every project is unique; we offer solutions tailored to your specific requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2024 U.S. Handle Worldwide Trade, LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        $('a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+
+</html>

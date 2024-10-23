@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Clearance Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #212121;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #212179;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('/Logistics_Transportation/bill\ of\ lading/customer_clearence.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 70vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1; 
+        }
+
+        .hero h1 {
+            position: relative;
+            z-index: 2; 
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            position: relative;
+            z-index: 2; 
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        .commitment-section {
+            padding: 60px 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .commitment-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .commitment-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .services-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        .services-list li {
+            background: #e7e7e7;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .services-list li:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
+            background-color: #212179;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">U.S. Handle Worldwide Trade</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Custom Clearance Services</h1>
+            <p>For peaceful and hassle-free international transportation.</p>
+        </div>
+    </section>
+
+    <div class="container commitment-section" id="services">
+        <h2>Our Commitment</h2>
+        <p>At U.S. Handle Worldwide Trade, LLC., we offer Custom Clearance Services to ensure smooth and hassle-free relocation.</p>
+        <p>Our experienced and skillful staff can handle all paperwork and customs clearance, saving you both time and money. We assist households in clearing goods quickly with our automated customs clearance networks, offering clearance of import and export goods arriving by land, sea, or air.</p>
+
+        <h3>Services Offered:</h3>
+        <ul class="services-list">
+            <li>Custom Documentations</li>
+            <li>Carting & Receiving Goods</li>
+            <li>Examination of Shipments</li>
+            <li>Handling of Stuffing and De-stuffing at Ports</li>
+        </ul>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2024 U.S. Handle Worldwide Trade, LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        $('a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+
+</html>

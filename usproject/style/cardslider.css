@@ -1,0 +1,209 @@
+
+/* cards slider  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+/* backgroud img */
+
+
+
+.slide-container {
+
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    background-image: url('/images/vehicle.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the background image covers the entire slider area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    border-radius: 25px; /* Optional: Adds round corners to the background */
+  }
+  
+  .slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative; /* Ensures it’s above the background image */
+  }
+  
+  .card {
+    border-radius: 25px;
+    background-color: #FFF;
+    overflow: hidden; 
+  }
+  
+  /* Rest of your existing styles remain the same */
+  
+
+
+
+
+
+/* end backgroud img  */
+
+
+
+
+
+
+
+
+
+
+.slide-container {
+  /* max-width: 1120px; */
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+#adjust{
+  height: 450px;
+}
+.card {
+  border-radius: 25px;
+  background-color: #FFF;
+  overflow: hidden; 
+}
+
+.image-content {
+  padding: 0; 
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 200px; 
+}
+
+.card-image .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+ .button {
+  border: none;
+  font-size: 20px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative; /* Required for ::before to position correctly */
+  z-index: 1;
+  font-family: inherit;
+}
+
+.button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: red;
+  transition: width 0.5s ease, background 0s; /* Ensure background doesn't transition awkwardly */
+  display: block;
+  z-index: -1;
+}
+
+.button:hover::before {
+  width: 105%;
+}
+
+.button:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+
+
+
+.swiper-navBtn {
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #4070F4;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #6E93f7;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

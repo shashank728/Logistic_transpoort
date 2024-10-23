@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism with Random Moving Triangles</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: rgba(33, 33, 121, 0.6); */
+            background: rgba(33, 33, 121, 0.5); 
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        .form-container {
+            position: relative;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form input, form button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1em;
+        }
+
+        form input {
+            background: rgba(255, 255, 255, 0.4);
+            color: #212179;
+        }
+
+        form button {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background" id="background"></div>
+
+    <script>
+        function createTriangles(numTriangles) {
+            const background = document.getElementById('background');
+            
+            for (let i = 0; i < numTriangles; i++) {
+                const triangle = document.createElement('div');
+                triangle.classList.add('triangle');
+                
+                // Randomize triangle color
+                const color = Math.random() > 0.5 ? 'red' : 'white';
+                triangle.style.borderBottom = `15px solid ${color}`;
+                
+                // Randomize position and size
+                triangle.style.left = Math.random() * 100 + 'vw';
+                triangle.style.top = Math.random() * 100 + 'vh';
+                triangle.style.transform = `scale(${Math.random()})`;
+
+                // Randomize animation duration and movement distance
+                const duration = Math.random() * 5 + 5; // Between 10s and 20s
+                const deltaX = Math.random() * 200 - 100; // Random movement -100px to +100px on X axis
+                const deltaY = Math.random() * 200 - 100; // Random movement -100px to +100px on Y axis
+
+                triangle.style.animation = `moveTriangle ${duration}s infinite alternate`;
+                triangle.style.setProperty('--deltaX', deltaX + 'px');
+                triangle.style.setProperty('--deltaY', deltaY + 'px');
+
+                background.appendChild(triangle);
+            }
+        }
+
+        // Create 100 triangles as background
+        createTriangles(100);
+    </script>
+
+    <style>
+        /* Keyframe for moving triangles */
+        @keyframes moveTriangle {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(var(--deltaX), var(--deltaY));
+            }
+        }
+    </style>
+</body>
+</html>

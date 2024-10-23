@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehousing Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            color: #212121;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #212179;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('/Logistics_Transportation/custom\ brokerage/wearhouseServicing.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 80vh; 
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1; 
+        }
+
+        .hero h1 {
+            position: relative;
+            z-index: 2; 
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            position: relative;
+            z-index: 2; 
+            font-size: 1.5rem;
+        }
+
+        .service-section {
+            padding: 60px 0;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            margin: 15px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #212179;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">U.S. Handle Worldwide Trade</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Warehousing Services</h1>
+            <p>Tailored logistics solutions for your unique business needs.</p>
+        </div>
+    </section>
+
+    <div class="container service-section" id="services">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="service-list">
+            <div class="service-card">
+                <img  style="height: 270px;" src="/Logistics_Transportation/custom brokerage/first.jpg"  alt="Bonded Warehousing">
+                <h4>Bonded Warehousing</h4>
+                <p>Secure storage solutions compliant with customs regulations.</p>
+            </div>
+            <div class="service-card">
+                <img  style="height: 270px; " src="/Logistics_Transportation/custom brokerage/inventory_management.webp" alt="Inventory Management">
+                <h4>Inventory Management</h4>
+                <p>Optimize your stock levels and minimize overhead costs.</p>
+            </div>
+            <div class="service-card">
+                <img  style="height: 270px;" src="/Logistics_Transportation/custom brokerage/packaging_labeling.jpg" alt="Packaging Services">
+                <h4>Packaging and Labeling</h4>
+                <p>Professional packaging services tailored to your products.</p>
+            </div>
+            <div class="service-card">
+                <img  style="height: 270px;" src="/Logistics_Transportation/custom brokerage/lcl_consolidation.jpg" alt="LCL Services">
+                <h4>LCL Consolidation</h4>
+                <p>Cost-effective consolidation for smaller shipments.</p>
+            </div>
+            <div class="service-card">
+                <img  style="height: 270px;" src="/Logistics_Transportation/custom brokerage/storage_facility.webp" alt="Storage Facilities">
+                <h4>Storage Facilities</h4>
+                <p>Flexible storage solutions including temperature-controlled options.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2024 U.S. Handle Worldwide Trade, LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        $('a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+
+</html>

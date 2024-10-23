@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Freight Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #F7F9FB;
+            color: #212179;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #212179;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('OIP-removebg-preview.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat;  
+            animation: shakeBackground 1s ease-in-out infinite; 
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes shakeBackground {
+            0% { background-position: center; }
+            25% { background-position: calc(50% - 5px); }
+            50% { background-position: center; }
+            75% { background-position: calc(50% + 5px); }
+            100% { background-position: center; }
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(223, 29, 30, 0.8), rgba(33, 33, 121, 0.8)); 
+            z-index: 1; 
+        }
+
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 2; 
+        }
+
+        .service-list {
+            background: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .service-list h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #DF1D1E;
+        }
+
+        .service-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .service-list ul li {
+            background: #f8f9fa;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .service-list ul li:hover {
+            background: #e2e6ea;
+        }
+
+        .content-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .content-images img {
+            max-width: 48%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #212179;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">U.S. Handle Worldwide Trade</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Sea Freight Services</h1>
+        <p>Cost-effective methods for transporting large and heavy loads with reliability.</p>
+    </section>
+
+    <div class="container mt-5" id="services">
+        <div class="service-list">
+            <h2 class="text-center">Services Offered</h2>
+            <ul class="mt-4">
+                <li>Sea Freight Import / Export Consolidation – LCL, FCL, RoRo, and Break bulk services</li>
+                <li>Logistics & Distribution Services</li>
+                <li>Quality processes for receiving, delivering, bonded storage, forwarding, shipping, and consolidation</li>
+                <li>Full Clearing and Forwarding Services</li>
+                <li>Door to Door Service</li>
+                <li>Hassle-free customs documentation and delivery</li>
+            </ul>
+        </div>
+
+        <div class="content-images">
+            <img src="/Logistics_Transportation/nvocc/ship1.jpeg" alt="Sea Freight Image 1">
+            <img src="/Logistics_Transportation/nvocc/ship2.jpg" alt="Sea Freight Image 2">
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2024 U.S. Handle Worldwide Trade, LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        $('a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+
+</html>

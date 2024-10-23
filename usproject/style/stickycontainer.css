@@ -1,0 +1,133 @@
+
+.sticky-container{
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: -119px;
+    z-index:2;
+    top: 130px;
+    width: 200px;
+}
+
+.sticky li{
+    list-style-type: none;
+    background-color: transparent;
+    color: #efefef;
+    height: 43px;
+    padding: 0px;
+    margin: 0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor: pointer;
+    /* filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); 
+filter: gray; 
+-webkit-filter: grayscale(100%);  */
+}
+
+.sticky li:hover{
+    margin-left: -115px;
+    background-color: #333;
+    /* border-radius: 6px; */
+    /* filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+            -webkit-filter: grayscale(0%); */
+}
+
+.sticky li img{
+    float: left;
+    margin: 5px 5px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.sticky li p{
+float:left;
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+    line-height: 43px;
+}
+.sticky-left-container{
+padding: 0px;
+margin: 0px;
+position: fixed;
+left: -158px;
+top:40%;
+width: 200px;
+z-index:2;
+}
+.sticky-left li{
+list-style-type: none;
+background-color: none;
+color: #efefef;
+height: 43px;
+padding: 0px;
+margin: 0px 0px 1px 0px;
+-webkit-transition:all 0.25s ease-in-out;
+-moz-transition:all 0.25s ease-in-out;
+-o-transition:all 0.25s ease-in-out;
+transition:all 0.25s ease-in-out;
+cursor: pointer; 
+}
+.sticky-left li:hover{
+margin-right: -150px;
+background-color:#333;
+border-radius: 25px 25px 25px 0;
+}
+.sticky-left li img{
+float: right;
+/* border-radius:50%;  */
+margin: 5px 5px;
+margin-left: 10px;
+}
+.sticky-left li p{
+padding: 0px;
+float:right;
+margin: 0px;
+text-transform: uppercase;
+line-height: 43px;
+}
+
+
+
+.background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+.triangle {
+    position: absolute;
+    margin-top: 250%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+
+.video-section {
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    align-items: center; /* Center the video vertically */
+    height: 100vh; /* Full viewport height, adjust as needed */
+    background-color: #fff; /* Optional background color */
+  }
+  
+  .video-container {
+    width: 70%;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  iframe {
+    width: 100%; /* Make iframe responsive */
+    height: 70vh; /* Maintain aspect ratio */
+  }
+  
